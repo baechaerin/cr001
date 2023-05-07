@@ -1,0 +1,80 @@
+/* ir처리 */
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
+/* is처리 */
+/* 모든 아이콘,배경은 여기에다가 넣어줘야 들어갈수 있다.  */
+/* 공공배급소 창고 */
+
+.header .logo a,
+.header .search-area .btn-submit::before,
+.header .service-area a::after,
+.sc-login .link-login::before,
+.sc-login .sub-area .link-id::before,
+.sc-login .sub-area .link-join::before,
+.sc-login .sub-area .link-find::before,
+.sc-news .group-issue .issue-area .link-media::after,
+.sc-sidenews .btn-wrap .btn-nav::before,
+.gnb .nav-list .mail::before,
+.gnb .nav-list .shop::before,
+.gnb .nav-list .tv::before,
+.gnb .weather-area .list_air .air_item+.air_item::before,
+.gnb .weather-area .list_air .air_item .state.state_normal::before,
+.sc-news .group-title .set-area .btn-set::after,
+.sc-news .group-title .link-title::before,
+.sc-news .group-title .link-title::after,
+.sc-news .group-title .sort-area .btn-sort+.btn-sort::before,
+.sc-story .group-title .info-area .btn_set:before,
+.sc-story .group-title .info-area .btn_set:after,
+.main-category .tap-category .btn-nav.prev::before,
+.main-category .tap-category .btn-nav.next::before,
+.topstory-item .topstory-img .play-icon::before,
+.tv-item .tv-img .play-icon::before,
+.group-funding .funding-title a:after,
+.sc-story .btn-more-wrap .btn-more .ico-more,
+.footer .group-notice .link_all:after,
+.sc-shopmall .btn.prev::before,
+.sc-shopmall .btn.next::before
+{
+    background-image: url(../img/sp-bg.png);
+    background-size: 442px auto;
+    background-repeat: no-repeat;
+}
+
+.sc-shopmall .link-shop:before,
+.sc-shopmall .link-shop:after,
+.sc-shopmall .event-wrap:after,
+.sc-shopmall .title-wrap .link_mall:after,
+.deal-area .title-wrap .logo:before,
+.sc-shopmall .deal-item .thumb-box+.thumb-box:before,
+.sc-shopmall .thumb-box .one-plus-label
+{
+    background-image: url(../img/sp_shop.png);
+    background-size: 129px 101px;
+    background-repeat: no-repeat;
+}
+
+.thumb-bd{
+    position: relative;
+    display: block;
+}
+
+.thumb-bd::after{
+    position: absolute;
+    top: 0;left: 0;
+    right: 0;bottom: 0;
+    /* background: #f00; */
+    border: 1px solid #000;
+    opacity: 0.1;
+    content: '';
+}
+
+[class*="-item"]:hover h4.title,
+.col-right [class*="-item"] a:hover .title-box>*
+{ text-decoration: underline; } 
+/* a:hover {text-decoration: underline} */

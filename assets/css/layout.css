@@ -1,0 +1,244 @@
+@import './reset.css';
+@import './common.css';
+
+/* 적응형 사이트의 최소위드잡기 */
+.wrapper{
+    min-width: 1190px;
+}
+
+
+.header{}
+
+.header .group-flex{
+    position: relative;
+    width: 1130px;
+    height: 160px;
+    /* background: #ccc; */
+    margin: 0 auto;
+}
+
+
+.header .logo{
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    margin-top: -32px;
+}
+.header .logo a{
+    display: block;
+    width: 222px;
+    height: 52px;
+    background-position: 0 -158px;
+}
+
+.header .search-area{
+    position: absolute;
+    top: 50%;
+    left: 268px;
+    margin-top: -28px;
+}
+.header .search-area .green-bd{
+    position: relative;
+    width: 582px;
+    height: 52px;
+    border: 1px solid #19ce60;
+    border-radius: 2px;
+}
+.header .search-area .input-text{
+    width: 444px;
+    height: 50px;
+    padding: 13px 15px;
+    margin: 1px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    outline: 0;
+}
+.header .search-area .btn-submit{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 56px;
+    background: #19ce60;
+}
+.header .search-area .btn-submit::before{
+    width: 22px;
+    height: 22px;
+    content: '';
+    display: block;
+    /* background: #fff; */
+    background-position: -420px -24px;
+    margin: 0 auto;
+}
+
+
+.header .service-area{
+    display: flex;
+    position: absolute;
+    top: 12px;
+    right: 27px;
+}
+.header .service-area .bar{
+    width: 1px;
+    height: 10px;
+    margin: 3px 10px;
+    background: #ccc;
+}
+.header .service-area .link-start::after{
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-position: -382px -213px;
+    vertical-align: top;
+    margin-top: -3px;
+    margin-left: 3px;
+    content: '';
+}
+.header .service-area .link-junior::after{
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-position: -264px -296px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px;
+    content: '';
+}
+
+.header .service-area .link-junior:hover::after{
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-position: -326px -296px;
+    background-repeat: no-repeat;
+    margin: 3px;    
+    content: '';
+}
+
+.header .service-area .link-bin::after{
+    display: inline-block;
+    width: 34px;
+    height: 11px;
+    background-position: -365px -245px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 3px 2px;
+    content: '';
+}
+.header .service-area .link-bin:hover::after{
+    display: inline-block;
+    width: 34px;
+    height: 11px;
+    background-position: -380px -199px;
+    background-repeat: no-repeat;
+    vertical-align: top
+}
+.gnb{
+    border-top: 1px solid #e4e8eb;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+}
+.gnb .inner{
+    padding: 11px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 1130px;
+    margin: 0 auto;
+}
+
+.gnb .nav-list{
+    gap: 12px;
+    color:#19ce60;
+    display: flex;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.gnb .nav-item .mail::before {
+    content: '';
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-position: -420px -73px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 9px 0 0;
+}
+  
+.gnb .nav-list .shop::before {
+    display: inline-block;
+    width: 54px;
+    height: 20px;
+    background-position: -209px -267px;
+    background-repeat: no-repeat;
+    vertical-align: -4px;
+    content: '';
+}
+.gnb .nav-list .tv::before {
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background-position: -256px -212px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 9px 2px 0 0;
+    content: '';
+}
+.gnb .nav-list .nav.tcb{    
+    color:#000;
+}
+.gnb .weather-area{
+    overflow: hidden;
+    display: inline-block;
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 29px;
+    vertical-align: top
+}
+
+.gnb .weather-area .list_air{
+    overflow: hidden;
+    display: flex;    
+}
+.gnb .weather-area .list_air .air_item{
+    color: #505050;
+
+}
+.gnb .weather-area .list_air .air_item .state{    
+    font-size: 13px;
+    color: #202020;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 100%;
+    font-size: 13px;
+    vertical-align: top;
+    margin-left: 7px;
+}
+
+.gnb .weather-area .list_air .air_item+.air_item::before{
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #e4e8eb;
+    margin: 0 10px;
+    vertical-align: -1px;
+    content: '';
+}
+
+.gnb .weather-area .list_air .air_item .state.state_normal{
+    font-weight: bold;
+}
+.gnb .weather-area .list_air .air_item .state.state_normal::before{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-position: -420px -246px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    vertical-align: -4px;
+    content: '';
+    margin-right: 7px;
+}
